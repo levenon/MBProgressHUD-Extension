@@ -10,9 +10,9 @@
 
 @interface MBProgressHUD (Extension)
 
-+ (MBProgressHUD *)showProgressText:(NSString *)text HUDAddedTo:(UIView *)view animated:(BOOL)animated;
++ (MBProgressHUD *)showProgressText:(NSString *)text addedTo:(UIView *)view animated:(BOOL)animated;
 
-+ (MBProgressHUD *)showText:(NSString *)text HUDAddedTo:(UIView *)view animated:(BOOL)animated afterDelay:(NSTimeInterval)delay;
++ (MBProgressHUD *)showText:(NSString *)text addedTo:(UIView *)view animated:(BOOL)animated afterDelay:(NSTimeInterval)delay;
 
 - (void)toText:(NSString *)text hide:(BOOL)animated afterDelay:(NSTimeInterval)delay;
 

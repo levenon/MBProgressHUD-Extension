@@ -10,7 +10,7 @@
 
 @implementation MBProgressHUD (Extension)
 
-+ (MBProgressHUD *)showProgressText:(NSString *)text HUDAddedTo:(UIView *)view animated:(BOOL)animated;{
++ (MBProgressHUD *)showProgressText:(NSString *)text addedTo:(UIView *)view animated:(BOOL)animated;{
     [MBProgressHUD hideAllHUDsForView:view animated:NO];
     
     MBProgressHUD *progressHUD = [MBProgressHUD showHUDAddedTo:view animated:YES];
@@ -20,7 +20,7 @@
     return progressHUD;
 }
 
-+ (MBProgressHUD *)showText:(NSString *)text HUDAddedTo:(UIView *)view animated:(BOOL)animated afterDelay:(NSTimeInterval)delay;{
++ (MBProgressHUD *)showText:(NSString *)text addedTo:(UIView *)view animated:(BOOL)animated afterDelay:(NSTimeInterval)delay;{
     MBProgressHUD *progressHUD = [MBProgressHUD showHUDAddedTo:view animated:YES];
     
     [progressHUD toText:text hide:animated afterDelay:delay];
